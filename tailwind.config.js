@@ -1,17 +1,17 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./build/*.html"],
+  content: ["./build/*.html", "./build/js/*.js"],
   theme: {
     extend: {
-      screens: {
-        'wildscreen': { 'raw': '(min-aspect-ratio: 3/2'},
+      screens:{
+        'widescreen': { 'raw': '(min-aspect-ratio: 3/2'},
         'tallscreen': { 'raw': '(min-aspect-ratio: 13/20)'},
       },
-      keyframes: {
+      keyframes:{
         'open-menu':{
            '0%': {transform: 'scaleY(0)'},
-           '80%': {tranform: 'scaleY(1.2)'},
-           '100%': {transfor: 'scaleY(1)'}
+           '80%': {transform: 'scaleY(1.2)'},
+           '100%': {transform: 'scaleY(1)'}
         },
       },
       animation:{
