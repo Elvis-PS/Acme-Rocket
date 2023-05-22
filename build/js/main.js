@@ -5,7 +5,7 @@ function initApp(){
     function toggleMenu(){
         mobileMenu.classList.toggle('hidden');
         mobileMenu.classList.toggle('flex');
-        console.log('click')
+        hamburgerBtn.classList.toggle('toggle-btn');
     }
 
     hamburgerBtn.addEventListener('click', toggleMenu);
